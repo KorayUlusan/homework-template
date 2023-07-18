@@ -14,6 +14,9 @@
 \newcommand{\STUDENTB}{\makecell{Lorem Ipsum\\ID: ???????}}
 
 % --------------------------------------------------------
+\usepackage{silence}
+\WarningFilter{scrartcl}{Usage of package `fancyhdr' together}
+
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{amsmath}
@@ -28,7 +31,6 @@
 \usepackage{subfigure}
 \usepackage{float}
 \usepackage{polynom}
-% \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{forloop}
 \usepackage{geometry}
@@ -76,7 +78,7 @@
 }
 
 % header / footer
-\pagestyle {fancy}
+\pagestyle{fancy}
 \fancyhead[L]{\COURSE}
 \fancyhead[C]{}
 \fancyhead[R]{\today}
@@ -94,7 +96,6 @@
 \renewcommand{\subquestionPostText}{)}
 
 % custom additions:
-\usepackage{ wasysym }
 \usepackage{enumerate}% http://ctan.org/pkg/enumerate
 \usepackage{dsfont}
 
