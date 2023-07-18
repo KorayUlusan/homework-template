@@ -1,4 +1,5 @@
 
+\documentclass[a4paper]{scrartcl}
 % this template is an adaption of:
 % https://www.overleaf.com/latex/templates/template-for-theoretische-informatik-uni-tubingen/xwsycshfkjtf
 
@@ -8,15 +9,12 @@
 \newcommand{\EXERCISES}{3} % number of excercises
 
 % only once
+\usepackage{makecell}
 \newcommand{\COURSE}{Lecture Name, Winter Semester 23/24}
-\newcommand{\STUDENTA}{Koray Ulusan}
-\newcommand{\STUDENTAid}{ID: 0000000}
-\newcommand{\STUDENTB}{Lorem Ipsum}
-\newcommand{\STUDENTBid}{ID: 1234567}
-
+\newcommand{\STUDENTA}{\makecell{Koray Ulusan\\ID: 0000000}}
+\newcommand{\STUDENTB}{\makecell{Lorem Ipsum\\ID: ???????}}
 
 % --------------------------------------------------------
-\documentclass[a4paper]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{amsmath}
@@ -112,34 +110,25 @@
 	\begin{minipage}{\linewidth}
 		\tcbset{
 			colframe=contourColor,colback=themeColor,
-			top=0.3em,bottom=1em,
-			left=0.7em,right=0.7em
+			top=0.35em,bottom=0.2em,
+			left=-0.40em,right=0.4em
 		}
 		\tcbox[tikznode]{
-			\hspace*{-1.5em}
-			\vspace*{-1.5em}
 			\begin{tabular}{ll}
 				% student A
-				\raisebox{-.4\height}{
+				\raisebox{-.37\height}{
 					\begin{tikzpicture}
-						% korays profilepic
 						\clip (0,0) circle (0.5cm) node {\includegraphics[width=1cm]{../korays-homework-sty/img/koray-min-pfp.jpg}};
 					\end{tikzpicture}
-				} & \hspace{-1em} \vspace{-0.9em}  \raisebox{0.4em}{\STUDENTA} \\
-				  & \hspace{-1em} \raisebox{1em}{\STUDENTAid}                 \\
+				} & \hspace{-1em} \STUDENTA \\
 				% student B
-				${}$\vspace{-1.7em} % adjusting vertical space between rows
-				\\
-				\raisebox{-.4\height}{
+				${}$\vspace{-0.7em}         \\ % adjust vertical space between rows
+				\raisebox{-.37\height}{
 					\begin{tikzpicture}
-						% korays profilepic
 						\clip (0,0) circle (0.5cm) node {\includegraphics[width=1cm]{../korays-homework-sty/img/unknown2.jpg}};
 					\end{tikzpicture}
-				} & \hspace{-1em} \vspace{-0.9em}  \raisebox{0.4em}{\STUDENTB} \\
-				  & \hspace{-1em} \raisebox{1em}{\STUDENTBid}                 \\
-				\vspace*{-2.9em}
+				} & \hspace{-1em} \STUDENTB \\
 			\end{tabular}
-			\hspace*{-1.0em}
 		}
 	\end{minipage} & \begin{minipage}{\linewidth}
 		                 \punkteliste{1}{\EXERCISES}
