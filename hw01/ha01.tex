@@ -10,7 +10,9 @@
 % only once
 \newcommand{\COURSE}{Lecture Name, Winter Semester 23/24}
 \newcommand{\STUDENTA}{Koray Ulusan}
-\newcommand{\STUDENTB}{lorem ipsum}
+\newcommand{\STUDENTAid}{ID: 0000000}
+\newcommand{\STUDENTB}{Lorem Ipsum}
+\newcommand{\STUDENTBid}{ID: 1234567}
 
 
 % --------------------------------------------------------
@@ -123,17 +125,19 @@
 						% korays profilepic
 						\clip (0,0) circle (0.5cm) node {\includegraphics[width=1cm]{../korays-homework-sty/img/koray-min-pfp.jpg}};
 					\end{tikzpicture}
-				} & \hspace{-1em} \STUDENTA \\
+				} & \hspace{-1em} \vspace{-0.9em}  \raisebox{0.4em}{\STUDENTA} \\
+				  & \hspace{-1em} \raisebox{1em}{\STUDENTAid}                 \\
 				% student B
-				${}$\vspace{-0.6em} % adjusting vertical space between rows
+				${}$\vspace{-1.7em} % adjusting vertical space between rows
 				\\
 				\raisebox{-.4\height}{
 					\begin{tikzpicture}
 						% korays profilepic
 						\clip (0,0) circle (0.5cm) node {\includegraphics[width=1cm]{../korays-homework-sty/img/unknown2.jpg}};
 					\end{tikzpicture}
-				} & \hspace{-1em} \STUDENTB
-				\vspace*{-0.7em}
+				} & \hspace{-1em} \vspace{-0.9em}  \raisebox{0.4em}{\STUDENTB} \\
+				  & \hspace{-1em} \raisebox{1em}{\STUDENTBid}                 \\
+				\vspace*{-2.9em}
 			\end{tabular}
 			\hspace*{-1.0em}
 		}
