@@ -38,26 +38,6 @@
 \usetikzlibrary{automata, arrows.meta, positioning}
 \usepackage{algpseudocode,algorithm,algorithmicx}
 
-%~=============== header / footer ===============
-\geometry{a4paper,left=3cm, right=3cm, top=3cm, bottom=3cm}
-\setlength{\headheight}{23.6pt}
-
-\pagestyle{fancy}
-\fancyhead[L]{\COURSE}
-\fancyhead[C]{}
-\fancyhead[R]{\today}
-
-\fancyfoot[L]{}
-\fancyfoot[C]{}
-\fancyfoot[R]{Page \thepage /\pageref*{LastPage}}
-
-% headline
-\def\header#1{
-	\begin{center}
-		{\Large Assignment Sheet #1}
-	\end{center}
-}
-
 %~=============== Homework style ================
 \usepackage{../korays-homework-sty/korayHomework}
 \renewcommand{\questionPreText}{Question }
@@ -92,6 +72,28 @@
 	\end{center}
 }
 % END OF: point table
+
+%~=============== header / footer ===============
+\geometry{a4paper,left=3cm, right=3cm, top=3cm, bottom=3cm}
+\setlength{\headheight}{23.6pt}
+
+\pagestyle{fancy}
+\fancyhead[L]{\COURSE}
+\fancyhead[C]{}
+\fancyhead[R]{\today}
+
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{Page \thepage /\pageref*{LastPage}}
+
+% headline
+\def\header#1{
+	\begin{center}
+		{\Large Assignment Sheet #1}
+	\end{center}
+}
+
+\def\headrule{\koraysfancyheadrule}
 
 %~============== custom additions ===============
 \usepackage{enumerate}
