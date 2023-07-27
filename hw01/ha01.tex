@@ -105,7 +105,7 @@
 \begin{document}
 
 % names and grades
-\begin{tabularx}{\linewidth}{m{0.3 \linewidth}X}
+\hspace*{-0.54em}\begin{tabularx}{\textwidth}{m{0.28 \linewidth}X}
 	\vspace*{-1.4em}
 	\begin{minipage}{\linewidth}
 		\tcbset{
@@ -130,11 +130,14 @@
 				} & \hspace{-1em} \STUDENTB \\
 			\end{tabular}
 		}
-	\end{minipage} & \begin{minipage}{\linewidth}
-		                 \punkteliste{1}{\EXERCISES}
-	                 \end{minipage} \\
+	\end{minipage}
+	 &
+	\hspace*{0.9em} % shift punkteliste to right
+	\begin{minipage}{\linewidth}
+		\punkteliste{1}{\EXERCISES}
+	\end{minipage} \\
 \end{tabularx}
-\vspace*{-3em} % dirty hack
+\vspace*{-2.77em} % dirty hack
 \header{\NUMBER}
 %~===============================================
 
@@ -142,6 +145,7 @@
 
 \question{1}
 \subquestion{a}
+asd
 \subquestion{b}
 \subquestion{c}
 \hltexttt{asdads}
